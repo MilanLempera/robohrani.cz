@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: #f4c11aff;
+$green: #adc201ff;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(207, 61%, 53%) !default;
+$blue: #089cecff;
+$purple: #7e357aff;
+
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+
+.bg-blue {
+  background-color: $blue;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: underline;
+
+    &:link,
+    &:visited,
+    &:active {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.bg-yellow {
+  background-color: $yellow;
+  color: white;
+}
+
+.bg-green {
+  background-color: $green;
+  color: white;
+}
+
+.footer {
+  padding-bottom: 1em;
+}
