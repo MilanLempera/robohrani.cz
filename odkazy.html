@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Odkazy | RoboHraní</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="/images/favicon.png"
+    />
+    <style>
+      .odkaz-col {
+        display: flex;
+      }
+      .odkaz {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .odkaz .card-image {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        background: white;
+        border-bottom: 1px solid #eee;
+      }
+      .odkaz .card-image img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .odkaz .card-content {
+        flex: 1;
+      }
+      a.odkaz {
+        transition: box-shadow 0.15s, transform 0.15s;
+      }
+      a.odkaz:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5em 1.5em rgba(10, 10, 10, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation"></nav>
+
+    <section class="section bg-yellow">
+      <div class="container is-max-desktop">
+        <p class="title has-text-white">Odkazy</p>
+        <p class="subtitle has-text-white">
+          Materiály ke stavebnicím, se kterými na kroužku pracujeme.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-multiline">
+          <div class="column odkaz-col is-one-third-desktop is-half-tablet">
+            <div class="card odkaz">
+              <div class="card-image">
+                <img
+                  src="images/microbit-mecanum-wheels.jpg"
+                  alt="micro:bit stavebnice"
+                />
+              </div>
+              <div class="card-content">
+                <p class="title is-5">micro:bit – Elecfreaks</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.elecfreaks.com/learn-en/microbitKit/Mecanum_wheel_car_kit/Mecanum_wheel_car_kit.html"
+                      target="_blank"
+                      >Wonder Rugged Kit</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.elecfreaks.com/learn-en/microbitKit/Wonder_Building_Kit/index.html"
+                      target="_blank"
+                      >Wonder Building Kit</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="content"><a href="./">← Zpět na RoboHraní</a></p>
+      </div>
+    </section>
+
+    <footer class="footer are-small bg-blue">
+      <div class="container is-max-desktop">
+        <div class="columns">
+          <div class="column">
+            Made with <a target="_blank" href="http://bulma.io">Bulma</a>,
+            <a target="_blank" href="https://icons8.com/icon/13109/robot"
+              >Robot</a
+            >
+            icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+            images by
+            <a target="_blank" href="https://pixabay.com">pixabay.com</a>
+          </div>
+          <div class="column has-text-right">
+            ©
+            <a href="mailto:milanlempera@gmail.com?subject=RoboHraní"
+              >Milan Lempera</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>

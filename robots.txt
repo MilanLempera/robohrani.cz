@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /wedo/*.pdf
+Disallow: /wedo/nahledy/
+Disallow: /spike/*.pdf
+Disallow: /spike/nahledy/
